@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load widget_tweaks %}
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">สมาชิกผู้จัดทำ</h1>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/3.jpg' %}" class="card-img-top" alt="Developer 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">นายกัณนิบุญ อ่องดี</h5>
+                    <p class="card-text text-muted">รหัสนักศึกษา 67124556<br>สาขา เทคโนโลยีสารสนเทศและการสื่อสาร</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/1.jpg' %}" class="card-img-top" alt="Developer 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">นายกอบกิจ โกษาพันธุ์</h5>
+                    <p class="card-text text-muted">รหัสนักศึกษา 67123506<br>สาขา เทคโนโลยีสารสนเทศและการสื่อสาร</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/2.jpg' %}" class="card-img-top" alt="Developer 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">นายธนชัย เอี่ยมสอาด</h5>
+                    <p class="card-text text-muted">รหัสนักศึกษา 67144085<br>สาขา เทคโนโลยีสารสนเทศและการสื่อสาร</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="{% url 'home' %}" class="btn btn-warning">กลับไปหน้าแรก</a>
+    </div>
+</div>
+{% endblock %}
